@@ -1,0 +1,41 @@
+html,
+body,
+#root,
+.App {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 15% 1fr 10%;
+  grid-template-columns: 15% 1fr 10%;
+}
+
+header,
+footer {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 4;
+}
+
+main {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-column: 1 / 4;
+}
+
+.sidebar,
+.component-container {
+  border: 2px solid black;
+}
+
+li {
+  list-style: none;
+}
